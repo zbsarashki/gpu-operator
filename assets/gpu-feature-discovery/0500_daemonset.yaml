@@ -17,6 +17,7 @@ spec:
         app: gpu-feature-discovery
         app.kubernetes.io/part-of: nvidia-gpu
     spec:
+      runtimeClassName: nvidia
       serviceAccount: nvidia-gpu-feature-discovery
       containers:
         - image: "FILLED BY THE OPERATOR"

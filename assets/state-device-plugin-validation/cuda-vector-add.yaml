@@ -6,6 +6,7 @@ metadata:
   name: nvidia-device-plugin-validation
   namespace: gpu-operator-resources
 spec:
+  runtimeClassName: nvidia
   tolerations:
     - key: nvidia.com/gpu
       operator: Exists
